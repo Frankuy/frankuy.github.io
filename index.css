@@ -16,19 +16,19 @@ body {
 
 .hero-container {
     height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1080px;
     margin: auto;
+    padding: 0px 24px;
 }
 
 .hero-container .subtitle {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2rem;
+    line-height: 3rem;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     text-align: center;
@@ -38,15 +38,31 @@ body {
 
 .hero-container .title {
     font-weight: 700;
-    font-size: 72px;
-    line-height: 91px;
+    font-size: 4rem;
+    line-height: 5rem;
     margin: 0;
     text-align: center;
 }
 
 .hero-container .description {
     text-align: center;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 2rem;
+    line-height: 2.8rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-container .subtitle {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .hero-container .title {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .hero-container .description {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
 }
