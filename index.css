@@ -1,16 +1,52 @@
 body {
     margin: 0;
-    background: #e52d27;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: Arial, Helvetica, sans-serif;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
 
-.container {
+.gradient {
+    background: linear-gradient(92deg, #00A3FF 23.7%, #00FFF0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-container {
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.hero-container .subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.84);
+    margin: 0;
+}
+
+.hero-container .title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 91px;
+    margin: 0;
+    text-align: center;
+}
+
+.hero-container .description {
+    text-align: center;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
 }
