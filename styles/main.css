@@ -51,6 +51,24 @@ body {
     text-align: center;
 }
 
+.btn {
+    transition: 0.2s;
+    background: #0B8DCD;
+    border-radius: 5px;
+    padding: 24px 72px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.01);
+    box-shadow: 4px 0px 24px rgba(75, 126, 255, 0.24), 0px 4px 24px rgba(75, 126, 255, 0.6);
+}
+
 @media (max-width: 768px) {
     .hero-container .subtitle {
         font-size: 1.4rem;
@@ -64,5 +82,10 @@ body {
     .hero-container .description {
         font-size: 1rem;
         line-height: 1.2rem;
+    }
+
+    .btn {
+        padding: 12px 36px;
+        font-size: 0.8rem;
     }
 }
