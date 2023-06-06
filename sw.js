@@ -5,6 +5,18 @@ const resourcesToPrecache = [
   "styles/main.css",
   "scripts/main.js",
   "images/icon.svg",
+  "fonts/Poppins/1.woff2",
+  "fonts/Poppins/2.woff2",
+  "fonts/Poppins/3.woff2",
+  "fonts/Poppins/4.woff2",
+  "fonts/Poppins/5.woff2",
+  "fonts/Poppins/6.woff2",
+  "fonts/Poppins/7.woff2",
+  "fonts/Poppins/8.woff2",
+  "fonts/Poppins/9.woff2",
+  "fonts/Poppins/10.woff2",
+  "fonts/Poppins/11.woff2",
+  "fonts/Poppins/12.woff2",
 ];
 
 self.addEventListener("install", (event) => {
