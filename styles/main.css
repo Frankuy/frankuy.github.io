@@ -1,91 +1,102 @@
 body {
-    margin: 0;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: 'Poppins', sans-serif;
-    color: white;
+  margin: 0;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .gradient {
-    background: linear-gradient(92deg, #00A3FF 23.7%, #00FFF0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  background: linear-gradient(92deg, #00a3ff 23.7%, #00fff0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1080px;
-    margin: auto;
-    padding: 0px 24px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1080px;
+  margin: auto;
+  padding: 0px 24px;
 }
 
 .hero-container .subtitle {
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 3rem;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.84);
-    margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.84);
+  margin: 0;
 }
 
 .hero-container .title {
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 5rem;
-    margin: 0;
-    text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin: 0;
+  text-align: center;
 }
 
 .hero-container .description {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2.8rem;
-    text-align: center;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
 }
 
 .btn {
-    transition: 0.2s;
-    background: #0B8DCD;
-    border-radius: 5px;
-    padding: 24px 72px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
+  transition: 0.2s;
+  background: #0b8dcd;
+  border-radius: 5px;
+  padding: 24px 72px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
-    transform: scale(1.01);
-    box-shadow: 4px 0px 24px rgba(75, 126, 255, 0.24), 0px 4px 24px rgba(75, 126, 255, 0.6);
+  transform: scale(1.01);
+  box-shadow: 4px 0px 24px rgba(75, 126, 255, 0.24),
+    0px 4px 24px rgba(75, 126, 255, 0.6);
 }
 
 @media (max-width: 768px) {
-    .hero-container .subtitle {
-        font-size: 1.4rem;
-        line-height: 2rem;
-    }
+  .hero-container .subtitle {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
 
-    .hero-container .title {
-        font-size: 1.8rem;
-        line-height: 2.4rem;
-    }
-    .hero-container .description {
-        font-size: 1rem;
-        line-height: 1.2rem;
-    }
+  .hero-container .title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .hero-container .description {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
 
-    .btn {
-        padding: 12px 36px;
-        font-size: 0.8rem;
-    }
+  .btn {
+    padding: 12px 36px;
+    font-size: 0.8rem;
+  }
 }
