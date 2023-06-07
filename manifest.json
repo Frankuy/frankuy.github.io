@@ -1,0 +1,17 @@
+{
+  "name": "Muhammad Fikri Hizbullah",
+  "short_name": "MFH",
+  "description": "Muhammad Fikri Hizbullah Portofolio",
+  "scope": "/",
+  "start_url": "/",
+  "background_color": "#2C5364",
+  "theme_color": "#2C5364",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "600x600"
+    }
+  ]
+}
