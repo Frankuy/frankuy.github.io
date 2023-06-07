@@ -1,6 +1,19 @@
 import "./styles/fonts.css";
 import "./styles/main.css";
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((reg) => {
+        console.log("Registered! ", reg);
+      })
+      .catch((err) => {
+        console.log("Registration failed: ", err);
+      });
+  });
+}
+
 const btnAdd = document.getElementById("btn-add-home");
 let deferredPrompt;
 window.addEventListener("beforeinstallprompt", (event) => {

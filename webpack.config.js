@@ -12,7 +12,7 @@ module.exports = (env, argv) => ({
     static: false,
   },
   output: {
-    filename: "[name].[contenthash].js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -23,7 +23,7 @@ module.exports = (env, argv) => ({
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
+      filename: "[name].css",
     }),
     new HtmlWebpackPlugin({
       template: "src/index.html",
