@@ -5,7 +5,11 @@ const { GenerateSW } = require("workbox-webpack-plugin");
 
 module.exports = (env, argv) => ({
   entry: "./src/index.js",
-  devtool: "inline-source-map",
+  devtool: argv.mode === "development" ? "inline-source-map" : undefined,
+  devServer: {
+    hot: false,
+    static: false,
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
