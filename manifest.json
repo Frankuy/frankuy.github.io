@@ -9,9 +9,10 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "/images/icon.svg",
-      "type": "image/svg+xml",
-      "sizes": "600x600"
+      "src": "/images/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
