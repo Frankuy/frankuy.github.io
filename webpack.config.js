@@ -31,6 +31,9 @@ module.exports = (env, argv) => ({
     new CopyPlugin({
       patterns: [{ from: "public", to: "" }],
     }),
-    new GenerateSW({}),
+    new GenerateSW({
+      cacheId: new Date().getTime().toString(),
+      cleanupOutdatedCaches: true,
+    }),
   ],
 });
