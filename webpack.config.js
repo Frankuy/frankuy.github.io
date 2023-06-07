@@ -8,10 +8,7 @@ module.exports = (env, argv) => ({
   devtool: "inline-source-map",
   output: {
     filename: "main.js",
-    path: path.resolve(
-      __dirname,
-      argv.mode === "development" ? "dist" : "docs"
-    ),
+    path: path.resolve(__dirname, "dist"),
     clean: true,
   },
   module: {
