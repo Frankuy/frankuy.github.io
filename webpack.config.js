@@ -3,13 +3,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { GenerateSW } = require("workbox-webpack-plugin");
 
-module.exports = {
-  mode: "development",
+module.exports = (env, argv) => ({
   entry: "./src/index.js",
   devtool: "inline-source-map",
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(
+      __dirname,
+      argv.mode === "development" ? "dist" : "docs"
+    ),
     clean: true,
   },
   module: {
@@ -24,4 +26,4 @@ module.exports = {
     }),
     new GenerateSW({}),
   ],
-};
+});
