@@ -8,6 +8,7 @@ import {
   cardSubtitle,
   date,
   description,
+  descriptionMobile,
   buttonContainer,
 } from "./index.module.css";
 
@@ -26,7 +27,7 @@ const Education = () => {
           <p className={cardSubtitle}>
             Bachelor of Science - BS, Computer Science
           </p>
-          <p className={date}>Sep 2022 - May 2026</p>
+          <p className={date}>Aug 2017 - Oct 2022</p>
         </div>
         <div className={description}>
           Computer science at ITB is a robust and innovative program in which
@@ -36,6 +37,13 @@ const Education = () => {
           problem. You will have ample opportunities to put these skills into
           practice through hands-on experiences that will give you an advantage
           in graduate school or in the job market.
+        </div>
+        <div className={descriptionMobile}>
+          Computer science at ITB is a robust and innovative program in which
+          faculty and students work collaboratively. We first learn basic
+          computational skills through practical computer programming problems
+          and then how to apply those skills to solve nearly any imaginable
+          problem.
         </div>
         <div className={buttonContainer}>
           <a
