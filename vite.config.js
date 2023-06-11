@@ -14,8 +14,8 @@ export default defineConfig({
         description: "Muhammad Fikri Hizbullah Portofolio",
         scope: "/",
         start_url: "/",
-        background_color: "#2C5364",
-        theme_color: "#2C5364",
+        background_color: "#0F1525",
+        theme_color: "#0F1525",
         display: "standalone",
         icons: [
           {
