@@ -27,3 +27,27 @@
   height: 512px;
   border-radius: 24px;
 }
+
+@media (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 24px;
+  }
+
+  .photo {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 0px;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
