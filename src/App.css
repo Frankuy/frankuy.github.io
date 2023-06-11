@@ -5,6 +5,22 @@
   background-clip: text;
 }
 
+.underline {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(92deg, #00a3ff 23.7%, #00fff0 100%);
+}
+
 .text-left {
   text-align: left;
 }
@@ -13,13 +29,13 @@
   transition: 0.2s;
   background: #0b8dcd;
   border-radius: 5px;
-  padding: 24px 72px;
+  padding: 8px 24px;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-size: 1.2rem;
   color: #ffffff;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn:hover {
